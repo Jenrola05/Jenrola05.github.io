@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web 110 - Assignment 11</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet -->
+</head>
+<style>
+    /* Add some additional styling for the images */
+    img {
+        max-width: 100%; /* Ensure images don't exceed the width of their container */
+        height: auto; /* Maintain the aspect ratio when resizing */
+        display: block; /* Remove any extra spacing added by default */
+        margin: 10px 0; /* Add some margin for better spacing */
+        width: 50%; /* Adjust the width of the images as needed */
+        background-color: beige;
+    }
+    body {
+        background-color: beige;
+    }
+</style>
+<body>
+    <h1>Web 110 - Assignment 11</h1>
+    <p>Computer graphics, encompassing both pictures and films created through computational processes, have played a transformative role across various media forms, revolutionizing animation, movies, advertising, video games, and graphic design. One significant aspect of computer graphics is computer animation, the art of crafting moving images through the utilization of computers.</p>
+
+    <p>In the realm of computer graphics, two fundamental types are raster graphics (or bitmap images) and vector graphics. Raster graphics are represented as a dot matrix data structure, forming a rectangular grid of pixels. These images are resolution-dependent, meaning they cannot scale up without a loss of quality. On the other hand, vector graphics employ polygons to represent images, offering scalability without compromising quality. Vector art, ideal for printing due to its mathematical curves, ensures crisp printing even when resized.</p>
+
+    <p>Raster-based image editors, such as Painter, Photoshop, and GIMP, focus on pixel-level editing, while vector-based image editors like CorelDRAW and Inkscape center around editing lines and shapes (vectors).
+
+        The HTML <img> element facilitates the insertion of images into web pages. The src attribute specifies the image URL, and the alt attribute provides alternative text for cases where the image cannot be displayed.</p>
+
+        <p>Multimedia, a convergence of text, audio, images, animations, video, and interactive content, finds applications in diverse fields, including advertisements, art, education, entertainment, engineering, medicine, mathematics, business, scientific research, and spatial-temporal applications. Rich media, often synonymous with interactive multimedia, supports collaborative end-user innovation and personalization over time.</p>
+
+        <p>Streaming media, constantly received and presented to end-users, allows for real-time access and can be delivered either live or on-demand. The <audio> element represents sound or an audio stream, supporting various audio types like PCM, MP3, AAC, Vorbis, Opus, and FLAC. Similarly, the <video> element plays videos, accommodating formats such as MP4, Ogg, and WebM.</p>
+
+            <p>Key terms in this context include AIFF (Audio Interchange File Format), AVI (Audio Video Interleave), CGI (computer-generated imagery), codec (encoding/decoding device or program), GIF (Graphics Interchange Format), haptic technology (providing a sense of touch), JPEG (lossy compression format), MIDI (Musical Instrument Digital Interface), MOV (Quicktime Movie), MPEG (Moving Picture Experts Group), MP3 (audio coding format), MP4 (multimedia container format), OGG (open container format), PNG (Portable Network Graphics), podcast (episodic digital audio series), screencast (digital recording of screen output), streaming media, SVG (Scalable Vector Graphics), TIFF (Tagged Image File Format), WAV (Waveform), and webcast (Internet-distributed media presentation).</p>
+
+            <p>In summary, computer graphics, ranging from raster to vector graphics, have revolutionized multimedia content creation and consumption. The combination of diverse media forms in multimedia, enhanced by streaming capabilities, contributes to interactive and engaging user experiences across various domains. The rich landscape of digital formats and technologies continues to shape how we perceive, create, and interact with multimedia content in the digital age</p>
+    <!-- Image tags for raster and vector images -->
+    <img src="computer-39062_1920.png" alt="Raster Image">
+    <img src="play-1173551.svg" alt="Vector Image">
+
+    <!-- Audio tag linking to mp3 or mp4 and oga audio files -->
+    <audio controls>
+        <source src="http://media.w3.org/2010/05/sound/sample.mp3" type="audio/mp3">
+        <source src="http://media.w3.org/2010/05/sound/sample.mp4" type="audio/mp4">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <!-- Video tag linking to webm, ogv, and mp4 video files -->
+    <video width="320" height="240" controls>
+        <source src="http://media.w3.org/2010/05/video/movie.webm" type="video/webm">
+        <source src="http://media.w3.org/2010/05/video/movie.ogv" type="video/ogg">
+        <source src="http://media.w3.org/2010/05/video/movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Iframe tag embedding a YouTube video -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+</body>
+</html>

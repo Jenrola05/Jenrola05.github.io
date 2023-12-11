@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web 110 - Assignment 12</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet -->
+</head>
+<body>
+    <h1 id="topHeading"></h1>
+
+    <p id="currentDateTimeParagraph"></p>
+
+    <canvas id="nameCanvas" width="400" height="50"></canvas>
+
+    <canvas id="drawingCanvas" width="400" height="400"></canvas>
+
+    <script>
+        // JavaScript to display name in the heading
+        document.getElementById('topHeading').innerText = 'Salami Caleb';
+
+        // JavaScript to display current date and time
+        let currentDate = new Date();
+        document.getElementById('currentDateTimeParagraph').innerText = 'Current Date and Time: ' + currentDate;
+
+        // JavaScript to write your name on the canvas
+        let nameCanvas = document.getElementById('nameCanvas');
+        let nameCanvasContext = nameCanvas.getContext('2d');
+        nameCanvasContext.font = '20px Arial';
+        nameCanvasContext.fillText('Salami Caleb', 10, 30);
+
+        // JavaScript to draw lines, circles, or squares on the canvas
+        let drawingCanvas = document.getElementById('drawingCanvas');
+        let drawingCanvasContext = drawingCanvas.getContext('2d');
+
+        // Draw a line
+        drawingCanvasContext.beginPath();
+        drawingCanvasContext.moveTo(50, 50);
+        drawingCanvasContext.lineTo(150, 150);
+        drawingCanvasContext.stroke();
+
+        // Draw a circle
+        drawingCanvasContext.beginPath();
+        drawingCanvasContext.arc(250, 250, 50, 0, 2 * Math.PI);
+        drawingCanvasContext.stroke();
+
+        // Draw a square
+        drawingCanvasContext.beginPath();
+        drawingCanvasContext.rect(300, 100, 80, 80);
+        drawingCanvasContext.stroke();
+    </script>
+
+    <p>JavaScript, often referred to as JS, stands out as a high-level, interpreted programming language that plays a pivotal role in web development alongside HTML and CSS. It serves as one of the three core technologies in crafting World Wide Web content, enabling the creation of interactive webpages and online programs, including engaging features like video games. Despite apparent similarities with Java in terms of name and syntax, JavaScript is distinct, designed specifically for client-side behavior in HTML pages, commonly known as Dynamic HTML (DHTML).
+
+        The language finds widespread support across modern web browsers, featuring built-in interpreters to execute scripts seamlessly. JavaScript's primary use lies in enhancing user experience by adding dynamic behaviors to web pages, such as loading new content without refreshing the entire page (Ajax), animating page elements, creating interactive content like games, and validating input in web forms. However, it is crucial to recognize the security risks associated with JavaScript, which operates within a sandbox, limiting its actions to web-related tasks and adhering to the same-origin policy, preventing access to sensitive information from other websites.</p>
+
+        <p>Security implications emphasize the importance of cautious development practices. JavaScript source code, being sent to the client, cannot be perfectly concealed, and form validation, while convenient, should not be solely relied upon for security. Developers must avoid embedding sensitive information in JavaScript and acknowledge that users can selectively disable scripts, posing potential vulnerabilities. JavaScript's case-sensitive nature, camelCase naming convention, and the integration of script debuggers in popular browsers are essential aspects to consider.
+
+            Key terms associated with JavaScript include AJAX (asynchronous web development techniques), XSS (cross-site scripting), DOM (Document Object Model), ECMAScript (standardizing JavaScript), JavaScript engine (interpreter executing JavaScript), jQuery (JavaScript library for HTML scripting), JSON (human-readable data format), same-origin policy (web application security model), syntax (rules defining correct document structure), and WebAssembly (web standard for executable code). Overall, JavaScript's significance in web development is underscored by its capacity to create dynamic and engaging user interfaces while requiring careful attention to security considerations.</p>
+</body>
+</html>
