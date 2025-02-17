@@ -1,0 +1,63 @@
+<!-- 
+Name: Caleb Salami
+Class: Web 190 
+Assignment: Module 3 Lab 
+Completion Date: 02/02/2025
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3 Lab - Flexbox Layout</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        #wrapper { width: 80%; margin: auto; background: #f4f4f4; padding: 10px; }
+        header { background: #333; color: white; text-align: center; padding: 10px; }
+        nav { display: flex; background: #555; padding: 10px; }
+        nav a { flex: 1; padding: 10px; text-decoration: none; color: white; text-align: center; }
+        nav a:hover { background: #777; }
+        .row { display: flex; margin-top: 10px; }
+        .side { flex: 30%; background: #ddd; padding: 10px; }
+        .main { flex: 70%; background: #bbb; padding: 10px; }
+        #address { background: #999; padding: 10px; margin-top: 10px; }
+        footer { background: #333; color: white; text-align: center; padding: 10px; margin-top: 10px; }
+        
+        @media screen and (max-width: 700px) {
+            .row, nav { flex-direction: column; }
+            #wrapper { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>My Website</h1>
+        </header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="row">
+            <div class="side">
+                <h2>Side Section</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="main">
+                <h2>Main Content</h2>
+                <p>This is the main content section with more detailed information.</p>
+                <div id="address">
+                    <p>Contact me at: <a href="mailto:calebsalami1@gmail.com">calebsalami1@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2025 Salami Caleb | <a href="#">Home</a> | <a href="#">About</a> | <a href="#">Services</a> | <a href="#">Portfolio</a> | <a href="#">Contact</a></p>
+        </footer>
+    </div>
+</body>
+</html>
