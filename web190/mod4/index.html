@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Salami Caleb -->
+    <!-- Web 190 -->
+    <!-- Module 4 Lab -->
+    <!-- Monday, February 10, 2025 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web 190 - Spring 2025: Module 4</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        #wrapper {
+            margin: auto;
+            width: 90%;
+            border: thin solid black;
+        }
+        header {
+            background-color: deepskyblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            border-top: thin solid black;
+            border-bottom: thin solid black;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: cyan;
+        }
+        .flex-container > div {
+            background-color: #f1f1f1;
+            width: 250px;
+            margin: 10px;
+            text-align: center;
+            line-height: 25px;
+            font-size: 1.1em;
+        }
+        .flex-container > div > img {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: deepskyblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+        @media screen and (max-width: 700px) {
+            #wrapper {
+                width: 100%;
+            }
+            .flex-container > div {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Web 190 - Spring 2025: Module 4</h1>
+        </header>
+        <main>
+            <h2>The justify-content Property</h2>
+            <p>The "justify-content: space-around;" declaration displays the flex items with space before, between, and after the lines:</p>
+            <div class="flex-container">
+                <div><img src="IMG_0456.jpg" alt="Lake Express"><p>The Lake Express at the dock in Milwaukee</p></div>
+                <div><img src="IMG_0457.jpg" alt="Top Deck"><p>Top Deck of Lake Express</p></div>
+                <div><img src="IMG_0458.jpg" alt="Leaving Milwaukee"><p>Leaving Milwaukee</p></div>
+                <div><img src="IMG_0460.jpg" alt="Wake"><p>Wake</p></div>
+                <div><img src="IMG_0470.jpg" alt="Beach"><p>The Beach at Goderich, Ontario, Canada</p></div>
+                <div><img src="IMG_0477.jpg" alt="Harbor"><p>The Harbor at Tobermory, Ontario, Canada</p></div>
+                <div><img src="IMG_0478.jpg" alt="Boat Dock"><p>Boat Dock, Tobermory</p></div>
+                <div><img src="IMG_0482.jpg" alt="Monarch Butterfly"><p>Monarch Butterfly</p></div>
+                <div><img src="IMG_0484.jpg" alt="Chi-Cheemaun"><p>The Chi-Cheemaun approaching the dock in Tobermory</p></div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 Caleb Salami. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
