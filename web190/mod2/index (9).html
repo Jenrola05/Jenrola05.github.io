@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+    <meta charset="utf-8">
+    <title>Most basic CSS Flexbox</title>
+    <!-- 
+        Name: Caleb Salami
+        Class: Web 190
+        Assignment: Mod 2 Lab
+        Date: Monday, january 27, 2025
+    -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #wrapper {
+            width: 90%;
+            margin: auto;
+            background-color: darkturquoise;
+        }
+
+        header {
+            color: white;
+            padding: 12px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav > div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+
+        main {
+            display: flex;
+        }
+
+        main > div {
+            background-color: lightslategrey;
+            margin: 10px;
+            padding: 10px;
+            color: white;
+        }
+
+        .left {
+            flex: 2;
+        }
+
+        .right {
+            flex: 1;
+        }
+
+        footer {
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-size: 1.1em;
+        }
+
+        @media only screen and (max-width: 510px) {
+            #wrapper {
+                width: 100%;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            main {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Most basic CSS Flexbox</h1>
+        </header>
+        <nav>
+            <div>link 1</div>
+            <div>link 2</div>
+            <div>link 3</div>
+            <div>link 4</div>
+        </nav>
+        <main>
+            <div class="left">
+                <h2>This is the first of two main areas of the page</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="right">
+                <h2>This is the second of two main areas of the page</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright&copy;2020</p>
+        </footer>
+    </div>
+</body>
+</html>
