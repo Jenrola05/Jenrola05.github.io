@@ -1,0 +1,49 @@
+<!--
+Your Name
+Web 190
+Module 5 Lab - Part 1
+Completion Date
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 5 - Grid Intro</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 10px;
+            background-color: mediumblue;
+            padding: 10px;
+        }
+        .grid-container > div {
+            background-color: lightblue;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+        .item1 { background-color: red; }
+        .item2 { background-color: green; }
+        .item9 { background-color: orange; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Grid Introduction - Grid Lines</h1>
+    </header>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+    </div>
+</body>
+</html>
+

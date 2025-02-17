@@ -1,0 +1,51 @@
+<!--
+Your Name
+Web 190
+Module 5 Lab - Part 2
+Completion Date
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Column and Row</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            background-color: lightgray;
+            padding: 10px;
+            height: 200px;
+        }
+        .grid-container > div {
+            background-color: lightcoral;
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+        }
+        .justify-container {
+            justify-content: space-around;
+        }
+        .align-container {
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Justify Content: Space-Around</h2>
+    <p>This grid container demonstrates the 'justify-content: space-around' property, which distributes space around grid items.</p>
+    <div class="grid-container justify-container">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </div>
+    <hr>
+    <h2>Align Content: Center</h2>
+    <p>This grid container demonstrates the 'align-content: center' property, which aligns grid items in the center of the container.</p>
+    <div class="grid-container align-container">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </div>
+</body>
+</html>
