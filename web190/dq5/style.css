@@ -1,0 +1,51 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #1E3A8A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+/* Column Styles */
+.column {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Left Column - Soccer */
+.left {
+    background-color: #FFD700; /* Gold */
+}
+
+/* Right Column - Ajebo Hustlers */
+.right {
+    background-color: #8A2BE2; /* Blue Violet */
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1E3A8A;
+    color: white;
+    margin-top: 20px;
+}
