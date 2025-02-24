@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Salami Caleb, Web 190- Spring 2025, Monday, february 24, 2025-->
+    <title>Web 190 - Module 6: The grid-area Property</title>
+    <meta charset="utf-8">
+    <style>
+        /* Grid Container */
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'menu main main main right right'
+                'menu footer footer footer footer footer';
+            grid-gap: 10px;
+            background-color: #2196f3;
+            padding: 10px;
+        }
+
+        /* Grid Items */
+        .grid-container > div {
+            background-color: powderblue;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .item1 { grid-area: header; }
+        .item2 {
+            grid-area: menu;
+            display: grid;
+            align-content: start;
+            grid-template-columns: auto;
+            grid-gap: 3px;
+            background-color: #2196f3;
+            padding-top: 0;
+        }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: right; }
+        .item5 { grid-area: footer; }
+
+        /* Navigation Inside Grid */
+        .item2 > div {
+            background-color: snow;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The grid-area Property</h1>
+    <p>This grid layout contains six columns and three rows:</p>
+
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">
+            <div class="nav1">nav1</div>
+            <div class="nav2">nav2</div>
+            <div class="nav3">nav3</div>
+            <div class="nav4">nav4</div>
+        </div>
+        <div class="item3">Main</div>
+        <div class="item4">Right</div>
+        <div class="item5">Footer, Copyright&copy;, 2025</div>
+    </div>
+
+</body>
+</html>
