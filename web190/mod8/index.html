@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Salami Caleb
+	 Web 190
+	 Mod 8
+	 Monday, March 10, 2025-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Add Web Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    border: thin solid black;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+header {
+    background-color: #2196F3;
+    padding: 2px;
+    height: 250px;
+    background-image: url('IMG_0345.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    padding: 15px;
+    margin: 5px;
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 8px;
+    padding: 10px;
+    align-content: space-around;
+}
+
+.grid-container > div {
+    background-color: white;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.grid-container > div > h5 {
+    margin: 0 0 4px 0;
+}
+
+.grid-container > div > img {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+    background-color: white;
+    margin-left: 10px;
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+footer {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.tab, .smart {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    #wrapper {
+        width: 100%;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        padding: 10px;
+        align-content: center;
+    }
+    .lapdesk { display: none; }
+    .tab { display: block; }
+    .smart { display: none; }
+}
+
+@media screen and (max-width: 510px) {
+    #wrapper {
+        width: 100%;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        padding: 10px;
+        align-content: center;
+    }
+    .lapdesk, .tab { display: none; }
+    .smart { display: block; }
+}
+</style>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>CSS Grid Image Gallery</h1>
+    </header>
+
+    <p class="lapdesk">This grid layout contains 4 columns in the laptop/desktop page layout:</p>
+    <p class="tab">This grid layout contains 3 columns in the tablet computer page layout:</p>
+    <p class="smart">This grid layout contains 1 column in the smartphone page layout:</p>
+
+    <div class="grid-container">
+        <div class="item1"><img src="IMG_0457.jpg"><h5>Image 1</h5></div>
+        <div class="item2"><img src="IMG_0458.jpg"><h5>Image 2</h5></div>
+        <div class="item3"><img src="IMG_0460.jpg"><h5>Image 3</h5></div>
+        <div class="item4"><img src="IMG_0468.jpg"><h5>Image 4</h5></div>
+        <div class="item5"><img src="IMG_0470.jpg"><h5>Image 5</h5></div>
+        <div class="item6"><img src="IMG_0477.jpg"><h5>Image 6</h5></div>
+        <div class="item7"><img src="IMG_0478.jpg"><h5>Image 7</h5></div>
+        <div class="item8"><img src="IMG_0482.jpg"><h5>Image 8</h5></div>
+        <div class="item9"><img src="IMG_0484.jpg"><h5>Image 9</h5></div>
+        <div class="item10"><img src="IMG_0485.jpg"><h5>Image 10</h5></div>
+        <div class="item11"><img src="IMG_0486.jpg"><h5>Image 11</h5></div>
+        <div class="item12"><img src="IMG_0490.jpg"><h5>Image 12</h5></div>
+    </div>
+    <footer>Footer, Copyright &copy; 2020</footer>
+</div>
+</body>
+</html>
