@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Name: Salami Caleb | Class: Web 190 | Assignment: Module 9 Lab | Date:thursday march 13 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Flexbox Performance Lab">
+    <title>Flexbox Performance Lab</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .wrapper {
+            width: 82%;
+            margin: 20px auto;
+            background: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            background: #555;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .left-content, .right-content {
+            padding: 20px;
+            background: #e9ecef;
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+
+        .left-content {
+            flex: 5;
+        }
+
+        .right-content {
+            flex: 3;
+        }
+
+        .left-content img {
+            max-width: 100%;
+            float: right;
+            margin-left: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 525px) {
+            .wrapper {
+                width: 100%;
+            }
+
+            nav, main {
+                flex-direction: column;
+            }
+
+            nav a {
+                display: block;
+                text-align: center;
+                margin: 5px 0;
+            }
+
+            .left-content, .right-content {
+                flex: 1;
+                text-align: center;
+                width: 100%;
+            }
+
+            .left-content img {
+                float: none;
+                display: block;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Flexbox Performance Lab</h1>
+        </header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+        <main>
+            <div class="left-content">
+                <h2>Left Content Area</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt vel nisi in malesuada. Nulla facilisi. Aenean sit amet turpis neque. Integer tincidunt odio vel risus placerat, in pulvinar magna condimentum. Praesent ac nunc non metus cursus gravida. Nulla aliquet augue in augue bibendum, at luctus purus feugiat.</p>
+                <img src="IMG_5658.jpeg" alt="Responsive Image">
+            </div>
+            <div class="right-content">
+                <h2>Right Content Area</h2>
+                <p>Donec vitae mauris feugiat, pharetra eros nec, tristique ligula. Suspendisse potenti. Etiam nec eros eget libero tincidunt ultrices. Vivamus suscipit, massa et ultricies laoreet, sapien ipsum pharetra purus, id auctor lacus nunc in est. Ut facilisis ipsum sit amet consectetur gravida. Vestibulum nec varius orci.</p>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 Flexbox Performance Lab</p>
+        </footer>
+    </div>
+</body>
+</html>
