@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with The Golden Fork for reservations, inquiries, or feedback. Contact us via email or call us at our location.">
+  <title>Contact Us | The Golden Fork</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>The Golden Fork</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="specials.html">Specials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>We would love to hear from you! Whether you have questions, need to make a reservation, or want to share feedback, reach out to us using the contact details below:</p>
+
+      <h3>Restaurant Location</h3>
+      <p><strong>Address:</strong> 1234 Savory Lane, Chicago, IL 60601</p>
+
+      <h3>Phone Number</h3>
+      <p><strong>Phone:</strong> <a href="tel:+13125557890">(312) 555-7890</a></p>
+
+      <h3>Email</h3>
+      <p><strong>Email:</strong> <a href="mailto:info@goldenfork.com">info@goldenfork.com</a></p>
+
+      <h3>Hours of Operation</h3>
+      <p><strong>Monday - Friday:</strong> 11:00 AM - 10:00 PM</p>
+      <p><strong>Saturday - Sunday:</strong> 12:00 PM - 11:00 PM</p>
+
+      <h3>Find Us</h3>
+      <div id="map"></div>
+
+      <h3>Follow Us</h3>
+      <div class="social-media">
+        <a href="https://www.facebook.com/GoldenFork" target="_blank">Facebook</a>
+        <a href="https://twitter.com/GoldenFork" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/GoldenFork" target="_blank">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 The Golden Fork | Open Daily</p>
+  </footer>
+
+  <script>
+    function initMap() {
+      var restaurantLocation = { lat: 41.8781, lng: -87.6298 };  // Coordinates for Chicago, IL
+      var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 14,
+        center: restaurantLocation,
+      });
+      var marker = new google.maps.Marker({
+        position: restaurantLocation,
+        map: map,
+        title: "The Golden Fork",
+      });
+    }
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>

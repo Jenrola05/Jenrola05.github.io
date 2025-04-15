@@ -1,0 +1,274 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light pastel blue background */
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #ffccd5; /* Soft pink background */
+    color: #4a4a4a; /* Dark grey text for readability */
+    padding: 40px 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #ff6f61; /* Soft coral red for the header text */
+    animation: slideInFromLeft 1s ease-out;
+  }
+  
+  /* Navbar */
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #4a4a4a; /* Soft dark grey text */
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    color: #ff6f61; /* Soft coral red on hover */
+  }
+  
+  /* Main Content */
+  main {
+    padding: 40px;
+    background-color: #ffffff; /* White background for content */
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    animation: slideInFromBottom 1s ease-out;
+  }
+  
+  /* Specials & Menu Section */
+  .specials, .menu, .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .special-item, .menu-item {
+    background-color: #fdfdfd; /* Off-white background for items */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .special-item:hover, .menu-item:hover {
+    transform: scale(1.05); /* Hover scale effect */
+  }
+  
+  .special-item h3, .menu-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff6f61; /* Coral red for headings */
+  }
+  
+  .special-item p, .menu-item p {
+    font-size: 1.1rem;
+    color: #666666; /* Soft grey text for descriptions */
+  }
+  
+  .special-item p.price, .menu-item p.price {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #e67e22; /* Golden-orange price text */
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #ffccd5; /* Soft pink footer */
+    color: #4a4a4a;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  footer p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* Social Media Links */
+  .social-media a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 1.5rem;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-media a:hover {
+    color: #ff6f61; /* Coral red on hover */
+  }
+  
+  /* Map Styling */
+  #map {
+    height: 300px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #ff6f61; /* Coral red button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff3d29; /* Darker red on hover */
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+    }
+  
+    .specials, .menu, .contact {
+      grid-template-columns: 1fr;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    .navbar ul li a {
+      font-size: 1.1rem;
+    }
+  }
+  .hero {
+    background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') no-repeat center center/cover;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  /* Menu Section */
+#menu {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  /* Menu Title */
+  #menu h2 {
+    font-size: 2.5rem;
+    color: #ff6f61;
+    margin-bottom: 40px;
+  }
+  
+  /* Menu Item Container */
+  .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Individual Menu Item */
+  .menu-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Menu Item Image */
+  .menu-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Menu Item Name and Price */
+  .menu-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 15px 0;
+  }
+  
+  .menu-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  /* Price Styling */
+  .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff6f61;
+  }
+  
+  
