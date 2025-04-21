@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Name: Salami Caleb | Class: Web 190 | Assignment: Module 13 | Date: 2025-04-17 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>W3.CSS Grid Layout Example</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    body {
+      background-color: #fef6e4;
+      color: #001858;
+    }
+    .w3-header, .w3-footer {
+      background-color: #f582ae;
+      color: white;
+    }
+    .w3-table th {
+      background-color: #8bd3dd;
+    }
+  </style>
+</head>
+
+<body>
+<div class="w3-container">
+
+  <!-- Header -->
+  <header class="w3-container w3-header w3-padding-32">
+    <h1>My Stylish W3.CSS Page</h1>
+  </header>
+
+  <!-- Collapsible Navigation -->
+  <div class="w3-bar w3-light-grey">
+    <button class="w3-bar-item w3-button" onclick="toggleNav()">☰ Menu</button>
+  </div>
+
+  <div id="navDemo" class="w3-bar-block w3-hide w3-light-grey">
+    <a href="#" class="w3-bar-item w3-button">Home</a>
+    <a href="#" class="w3-bar-item w3-button">About</a>
+    <a href="#" class="w3-bar-item w3-button">Contact</a>
+  </div>
+
+  <!-- Row 1 -->
+  <div class="w3-row w3-margin-top">
+    <div class="w3-col l2 m3 s12 w3-padding w3-pale-blue">
+      <p>Left Column Content</p>
+    </div>
+    <div class="w3-col l8 m6 s12 w3-padding w3-pale-yellow">
+      <p>Center Column Content with Image:</p>
+      <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Placeholder Image" class="w3-image w3-right w3-margin" style="width:60%;">
+    </div>
+    <div class="w3-col l2 m3 s12 w3-padding w3-pale-blue">
+      <p>Right Column Content</p>
+    </div>
+  </div>
+
+  <!-- Row 2 -->
+  <div class="w3-row w3-margin-top">
+    <div class="w3-col l6 m4 s12 w3-padding w3-pale-green">
+      <p>This is the left column of Row 2. Here you could include any kind of placeholder content like text, links, or lists.</p>
+    </div>
+    <div class="w3-col l6 m8 s12 w3-padding w3-pale-green">
+      <table class="w3-table w3-striped">
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Gloves</td>
+          <td>$28</td>
+        </tr>
+        <tr>
+          <td>Jacket</td>
+          <td>$54</td>
+        </tr>
+        <tr>
+          <td>Scarf</td>
+          <td>$23</td>
+        </tr>
+        <tr>
+          <td>Cap</td>
+          <td>$32</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-footer w3-center w3-padding-24 w3-margin-top">
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+</div>
+
+<!-- JavaScript for Collapsible Nav -->
+<script>
+function toggleNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") === -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
