@@ -1,0 +1,27 @@
+<h2 class="w3-center">Frequently Asked Questions</h2>
+
+<button onclick="myFunction('Demo1')" class="w3-button w3-block w3-left-align w3-light-blue w3-margin-top">Question 1</button>
+<div id="Demo1" class="w3-hide w3-container w3-padding-16">
+  <p>Answer to question 1 goes here...</p>
+</div>
+
+<button onclick="myFunction('Demo2')" class="w3-button w3-block w3-left-align w3-light-blue w3-margin-top">Question 2</button>
+<div id="Demo2" class="w3-hide w3-container w3-padding-16">
+  <p>Answer to question 2 goes here...</p>
+</div>
+
+<button onclick="myFunction('Demo3')" class="w3-button w3-block w3-left-align w3-light-blue w3-margin-top">Question 3</button>
+<div id="Demo3" class="w3-hide w3-container w3-padding-16">
+  <p>Answer to question 3 goes here...</p>
+</div>
+
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
