@@ -1,0 +1,23 @@
+{
+  "id": "1",
+  "version": "2.0",
+  "name": "PizzaOrderTest",
+  "tests": [
+    {
+      "id": "test-home",
+      "name": "Test Home Page",
+      "commands": [
+        {
+          "command": "open",
+          "target": "/",
+          "value": ""
+        },
+        {
+          "command": "assertTitle",
+          "target": "Pizza App",
+          "value": ""
+        }
+      ]
+    }
+  ]
+}
