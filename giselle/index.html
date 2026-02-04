@@ -12,16 +12,19 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', sans-serif;
 }
-body {
-  height: 100vh;
+
+  body {
+  min-height: 100vh;
   background: linear-gradient(135deg, #ff9acb, #ffc3e0);
   display: flex;
   justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  align-items: flex-start;
+  overflow-y: auto;
+  padding: 40px 0;
   color: white;
   text-align: center;
 }
+
 
 
 .card {
@@ -230,4 +233,5 @@ setInterval(() => {
 
 </body>
 </html>
+
 
